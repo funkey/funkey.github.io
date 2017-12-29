@@ -1,0 +1,95 @@
+table.tables2 {
+  border-collapse: collapse;
+  border: none;
+  width:100%;
+}
+
+table.tables2 td,
+table.tables2 th {
+  padding: 5px;
+  line-height: 13px;
+  border: none;
+  text-align: left;
+}
+
+table.tables2 thead th:first-child,
+table.tables2 thead td:first-child {
+  border-left: none !important;
+}
+
+table.tables2 thead th,
+table.tables2 thead td {
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  padding: 0.5em 5px;
+  vertical-align: middle;
+  color: #666;
+}
+
+table.tables2 thead th > a {
+  color: #666666
+}
+table.tables2 thead th.orderable > a {
+  padding-right: 20px;
+  background: url(../img/arrow-inactive-up.png) right center no-repeat;
+}
+table.tables2 thead th.orderable.asc > a {
+  background-image: url(../img/arrow-active-up.png);
+}
+table.tables2 thead th.orderable.desc > a {
+  background-image: url(../img/arrow-active-down.png);
+}
+
+table.tables2 tr.odd {
+  background-color: #EEE;
+}
+
+table.tables2 tr.even {
+  background-color: white;
+}
+
+table.tables2 + ul.pagination {
+  overflow: auto;
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  list-style: none;
+}
+
+table.tables2 + ul.pagination > li {
+  float: left;
+  line-height: 22px;
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+table.tables2 + ul.pagination > li:first-child {
+  margin-left: 0;
+}
+
+table.tables2 + ul.pagination > li.cardinality {
+  float: right;
+  color: #8d8d8d;
+}
+
+table.tables2 > tbody > tr > td > .missing {
+  background: transparent url(../img/missing.png) right center no-repeat;
+  color: #717171;
+  padding-right: 20px;
+}
+
+table.tables2 > tbody > tr > td > .missing:hover {
+  color: #333;
+}
+
+div.table-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+div.table-container p {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
